@@ -1,0 +1,1 @@
+# SerraTec-2022-logica
