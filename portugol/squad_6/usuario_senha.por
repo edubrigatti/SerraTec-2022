@@ -4,48 +4,59 @@ programa
 		
     		funcao inicio(){	
     			
-    			usuario_senha()  
+    			login()  
           }
 
-    			funcao usuario_senha(){
-			escreva("Nome do usuário: ")
+    			funcao login(){
+			escreva("Usuário: ")
         		leia(usuario) 
-        		escreva("Sua senha: ")
+        		escreva("Senha: ")
         		leia(senha)
        		limpa()
 
-        			se(usuario == "Robo" e senha == "1234") {
-           	escreva("Seja bem vindo, ", usuario)
-           	}
+        			se (valida(usuario, senha)){
+           		escreva("Seja bem vindo, ", usuario)
+           	}           		
       			senao {
-          	para(inteiro tentativa = 1; tentativa <= 2; tentativa++) {
-               	se(usuario != "Robo" ou senha != "1234") {
+          	para(inteiro tentativa = 1; tentativa <= 1; tentativa++) {
+               	se (valida(usuario, senha))
+          	
+          		   
                limpa()
-               escreva("Usuário e/ou Senha inválidos!\nNome do usuário: ")
+               escreva("Dados incorretos!\nNome do usuário: ")
                leia(usuario)
                escreva("Sua senha: ")
                leia(senha)
                limpa()
-                	se (usuario == "Robo" e senha == "1234"){
+               	se (valida(usuario,senha)){
                 escreva("Bem vindo, ", usuario)
                 } 
                 	senao {
                 escreva("Acesso negado!")
                 }
+                	  	
+                	       }
                 }
 
             }
+
+            	funcao logico valida(cadeia usuario, cadeia senha){
+            		retorne(usuario == "Eduardo" e senha == "edu" ou usuario == "Wagner" e senha == "wagner" ou 
+        			   usuario == "Leonardo" e senha == "leo" ou usuario == "Paulo" e senha == "paulo" ou
+        			   usuario == "Renata" e senha == "renata" ou usuario == "Tatiana" e senha == "tati")
+            }
+            	
             
         }	
     		
-    	}
-}
+    	
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1030; 
+ * @POSICAO-CURSOR = 997; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
