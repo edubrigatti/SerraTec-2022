@@ -18,7 +18,7 @@ programa
 			leia(resposta)
 
 				enquanto (resposta<1 ou resposta>2){
-					escreva("resposta inválida\n")
+					escreva("número incorreto\n")
 					escreva("Peço que  digite [1] para nome ou [2] para apelido:\n")
 					leia(resposta)	
 				}
@@ -36,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 530; 
+ * @POSICAO-CURSOR = 459; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
